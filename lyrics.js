@@ -29,7 +29,7 @@ const getSonglist = new Promise(
 
 
 (async () => {
-  // Wipre the output file clean at the beginning
+  // Wipe the output file clean at the beginning
   fs.truncate(outputFile, 0, function(){'Output file clean'})
   songlist = await getSonglist;
   scrapAll();
